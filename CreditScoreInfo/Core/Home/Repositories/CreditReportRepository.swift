@@ -28,10 +28,14 @@ final class CreditReportRepository: CreditReportRepositoryProtocol {
     
     // MARK: CreditReportRepositoryProtocol
     func report(then completion: @escaping ReportCallback, catchError: @escaping ErrorCallback) {
-        webService.load(CreditReportResponse.self, from: .report, then: {
-            completion($0.report)
-        }, catchError: {
-            catchError($0)
+        webService.load(CreditReportResponse.self, from: .report, then: { response in
+            DispatchQueue.main.async {
+                completion(response.report)
+            }
+        }, catchError: { error in
+             DispatchQueue.main.async {
+                catchError(error)
+            }
         })
     }
 }

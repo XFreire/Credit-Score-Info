@@ -35,6 +35,7 @@ final class CreditReportPresenter: CreditReportPresenterProtocol {
         view?.setLoading(true)
         repository.report(then: { [weak self] in
             guard let self = self else { return }
+            self.view?.setLoading(false)
             self.view?.show(report: $0)
         }, catchError: {
             self.view?.setLoading(false)

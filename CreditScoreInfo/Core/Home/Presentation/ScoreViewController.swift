@@ -49,6 +49,7 @@ extension ScoreViewController: CreditReportView {
     
     func show(report: CreditReport) {
         scoreViewPresenter.present(report, in: scoreView)
+        
     }
     
     func show(error: Error) {
