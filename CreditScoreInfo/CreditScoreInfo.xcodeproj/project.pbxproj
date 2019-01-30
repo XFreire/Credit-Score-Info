@@ -41,6 +41,7 @@
 		AC049CC92201BA9D00F39BCF /* WebServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */; };
 		AC049CCA2201BA9D00F39BCF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC72201BA9D00F39BCF /* Endpoint.swift */; };
 		AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCB2201BB1800F39BCF /* EndpointTests.swift */; };
+		AC049CCE2201BBCC00F39BCF /* CreditReportAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceAssembly.swift; sourceTree = "<group>"; };
 		AC049CC72201BA9D00F39BCF /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AC049CCB2201BB1800F39BCF /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,9 +240,9 @@
 		AC049C762201AD1900F39BCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				AC049CC42201BA7A00F39BCF /* WebService */,
 				AC049CB12201B40100F39BCF /* DI */,
 				AC049CAD2201B3E300F39BCF /* Home */,
+				AC049CC42201BA7A00F39BCF /* WebService */,
 				AC049C932201AD3C00F39BCF /* Common */,
 				AC049C772201AD1900F39BCF /* Core.h */,
 				AC049C782201AD1900F39BCF /* Info.plist */,
@@ -350,6 +352,7 @@
 		AC049CB02201B3FC00F39BCF /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */,
 				AC049CC12201B9E200F39BCF /* ErrorViewController.swift in Sources */,
 				AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */,
+				AC049CCE2201BBCC00F39BCF /* CreditReportAssembly.swift in Sources */,
 				AC049CC32201B9F400F39BCF /* UIViewController+ChildViewController.swift in Sources */,
 				AC049CBB2201B86800F39BCF /* String+Localization.swift in Sources */,
 			);
