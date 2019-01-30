@@ -42,6 +42,7 @@
 		AC049CCA2201BA9D00F39BCF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC72201BA9D00F39BCF /* Endpoint.swift */; };
 		AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCB2201BB1800F39BCF /* EndpointTests.swift */; };
 		AC049CCE2201BBCC00F39BCF /* CreditReportAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */; };
+		AC049CD02201BD6D00F39BCF /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		AC049CC72201BA9D00F39BCF /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AC049CCB2201BB1800F39BCF /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportAssembly.swift; sourceTree = "<group>"; };
+		AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 		AC049CB12201B40100F39BCF /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */,
 				AC049CBD2201B90700F39BCF /* ScoreViewPresenter.swift in Sources */,
 				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
+				AC049CD02201BD6D00F39BCF /* CoreAssembly.swift in Sources */,
 				AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
 				AC049CC82201BA9D00F39BCF /* WebService.swift in Sources */,

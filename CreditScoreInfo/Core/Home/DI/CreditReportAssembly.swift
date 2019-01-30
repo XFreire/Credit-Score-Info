@@ -11,11 +11,11 @@ import UIKit
 final public class CreditReportAssembly {
     
     // MARK: Properties
-    private let webServiceAssemby: WebServiceAssembly
+    private let webServiceAssembly: WebServiceAssembly
     
     // MARK: Initialization
-    init(webServiceAssemby: WebServiceAssembly) {
-        self.webServiceAssemby = webServiceAssemby
+    init(webServiceAssembly: WebServiceAssembly) {
+        self.webServiceAssembly = webServiceAssembly
     }
     
     public func viewController() -> UIViewController {
@@ -27,7 +27,7 @@ final public class CreditReportAssembly {
     }
     
     func repository() -> CreditReportRepositoryProtocol {
-        return CreditReportRepository(webService: webServiceAssemby.webService)
+        return CreditReportRepository(webService: webServiceAssembly.webService)
     }
     
     func scoreViewPresenter() -> ScoreViewPresenter {
