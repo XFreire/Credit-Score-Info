@@ -14,9 +14,36 @@ protocol CreditReportView: class {
     func show(error: Error)
 }
 
-protocol CreditScorePresenterProtocol {
-    var view: CreditReportView { get set }
+protocol CreditReportPresenterProtocol {
+    var view: CreditReportView? { get set }
     func didLoad()
+}
+
+final class CreditReportPresenter: CreditReportPresenterProtocol {
+    
+    // MARK: Properties
+    private let repository: CreditReportRepositoryProtocol
+    weak var view: CreditReportView?
+    
+    // MARK: Initialization
+    init(repository: CreditReportRepositoryProtocol) {
+        self.repository = repository
+    }
+    
+    // MARK: CreditReportPresenterProtocol
+    func didLoad() {
+        view?.setLoading(true)
+        repository.report(then: { [weak self] in
+            guard let self = self else { return }
+            self.view?.show(report: $0)
+        }, catchError: {
+            self.view?.setLoading(false)
+            self.view?.show(error: $0)
+        })
+    }
+    
+    
+    
 }
 
 
