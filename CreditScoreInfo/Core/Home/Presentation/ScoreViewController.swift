@@ -18,7 +18,7 @@ class ScoreViewController: UIViewController {
         didSet {
             let width = Double(scoreView.frame.width)
             scoreView.cornerRadius = width / 2
-            scoreView.borderWidth = 2
+            scoreView.borderWidth = 1
             scoreView.borderColor = .darkGray
         }
     }
