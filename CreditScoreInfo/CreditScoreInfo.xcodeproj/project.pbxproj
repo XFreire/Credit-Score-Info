@@ -37,6 +37,10 @@
 		AC049CC02201B9E200F39BCF /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CBE2201B9E200F39BCF /* ErrorViewController.xib */; };
 		AC049CC12201B9E200F39BCF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CBF2201B9E200F39BCF /* ErrorViewController.swift */; };
 		AC049CC32201B9F400F39BCF /* UIViewController+ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC22201B9F400F39BCF /* UIViewController+ChildViewController.swift */; };
+		AC049CC82201BA9D00F39BCF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC52201BA9D00F39BCF /* WebService.swift */; };
+		AC049CC92201BA9D00F39BCF /* WebServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */; };
+		AC049CCA2201BA9D00F39BCF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC72201BA9D00F39BCF /* Endpoint.swift */; };
+		AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCB2201BB1800F39BCF /* EndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +133,10 @@
 		AC049CBE2201B9E200F39BCF /* ErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
 		AC049CBF2201B9E200F39BCF /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		AC049CC22201B9F400F39BCF /* UIViewController+ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewController.swift"; sourceTree = "<group>"; };
+		AC049CC52201BA9D00F39BCF /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceAssembly.swift; sourceTree = "<group>"; };
+		AC049CC72201BA9D00F39BCF /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AC049CCB2201BB1800F39BCF /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +238,7 @@
 		AC049C762201AD1900F39BCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CC42201BA7A00F39BCF /* WebService */,
 				AC049CB12201B40100F39BCF /* DI */,
 				AC049CAD2201B3E300F39BCF /* Home */,
 				AC049C932201AD3C00F39BCF /* Common */,
@@ -247,6 +256,7 @@
 				AC049C862201AD1900F39BCF /* Info.plist */,
 				AC049CA12201AEDF00F39BCF /* CreditReportResponseTests.swift */,
 				AC049CA52201B09000F39BCF /* CreditReportTests.swift */,
+				AC049CCB2201BB1800F39BCF /* EndpointTests.swift */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
@@ -349,6 +359,16 @@
 			children = (
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		AC049CC42201BA7A00F39BCF /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				AC049CC72201BA9D00F39BCF /* Endpoint.swift */,
+				AC049CC52201BA9D00F39BCF /* WebService.swift */,
+				AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,12 +607,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC049CCA2201BA9D00F39BCF /* Endpoint.swift in Sources */,
 				AC049C9A2201AE1700F39BCF /* CreditReport.swift in Sources */,
+				AC049CC92201BA9D00F39BCF /* WebServiceAssembly.swift in Sources */,
 				AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */,
 				AC049CBD2201B90700F39BCF /* ScoreViewPresenter.swift in Sources */,
 				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
 				AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
+				AC049CC82201BA9D00F39BCF /* WebService.swift in Sources */,
 				AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */,
 				AC049CC12201B9E200F39BCF /* ErrorViewController.swift in Sources */,
 				AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */,
@@ -607,6 +630,7 @@
 			files = (
 				AC049CA42201AF4500F39BCF /* LocalDataReader.swift in Sources */,
 				AC049CA22201AEDF00F39BCF /* CreditReportResponseTests.swift in Sources */,
+				AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */,
 				AC049CA62201B09000F39BCF /* CreditReportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
