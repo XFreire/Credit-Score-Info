@@ -6,14 +6,14 @@ value received from the endpoint.
 
 The endpoint: https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values
 
-##Requirements
+## Requirements
 The following requirements should be met:
 
 - Use the latest version of Swift.
 - The code should be production grade.
 - It should compile and run.
 
-##Tips/Advice
+## Tips/Advice
 
 - Testing is very important for us and you should take that into
 consideration when creating this demo. Even if you don&#39;t write a
