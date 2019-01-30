@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScoreView" customModule="Core" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-qc-mXw">
+                    <rect key="frame" x="45.5" y="40.5" width="147" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZz-dv-JRs">
+                    <rect key="frame" x="79.5" y="150" width="79" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="327" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4F-L3-4vR">
+                    <rect key="frame" x="80" y="77.5" width="78" height="56.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="47"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zZz-dv-JRs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="isw-cM-NL8"/>
+                <constraint firstItem="zZz-dv-JRs" firstAttribute="top" secondItem="d4F-L3-4vR" secondAttribute="bottom" constant="16" id="kbL-ZH-3Kk"/>
+                <constraint firstItem="d4F-L3-4vR" firstAttribute="top" secondItem="fbZ-qc-mXw" secondAttribute="bottom" constant="16" id="lY5-nj-iML"/>
+                <constraint firstItem="d4F-L3-4vR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uXI-fY-tY3"/>
+                <constraint firstItem="d4F-L3-4vR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vWr-n9-gAI"/>
+                <constraint firstItem="fbZ-qc-mXw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y3J-Fn-O08"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="maxScoreValueLabel" destination="zZz-dv-JRs" id="PpC-XK-Kl0"/>
+                <outlet property="scoreLabel" destination="d4F-L3-4vR" id="8u1-cV-fa5"/>
+                <outlet property="titleLabel" destination="fbZ-qc-mXw" id="bBr-P1-bS4"/>
+            </connections>
+            <point key="canvasLocation" x="28.800000000000001" y="-50.824587706146929"/>
+        </view>
+    </objects>
+</document>

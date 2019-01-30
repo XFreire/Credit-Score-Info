@@ -25,6 +25,9 @@
 		AC049CA22201AEDF00F39BCF /* CreditReportResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CA12201AEDF00F39BCF /* CreditReportResponseTests.swift */; };
 		AC049CA42201AF4500F39BCF /* LocalDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CA32201AF4500F39BCF /* LocalDataReader.swift */; };
 		AC049CA62201B09000F39BCF /* CreditReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CA52201B09000F39BCF /* CreditReportTests.swift */; };
+		AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CA72201B17100F39BCF /* ScoreView.swift */; };
+		AC049CAA2201B17B00F39BCF /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CA92201B17B00F39BCF /* ScoreView.xib */; };
+		AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CAB2201B1EA00F39BCF /* AFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		AC049CA12201AEDF00F39BCF /* CreditReportResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportResponseTests.swift; sourceTree = "<group>"; };
 		AC049CA32201AF4500F39BCF /* LocalDataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataReader.swift; sourceTree = "<group>"; };
 		AC049CA52201B09000F39BCF /* CreditReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportTests.swift; sourceTree = "<group>"; };
+		AC049CA72201B17100F39BCF /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		AC049CA92201B17B00F39BCF /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
+		AC049CAB2201B1EA00F39BCF /* AFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,9 @@
 		AC049C962201AD4F00F39BCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CA72201B17100F39BCF /* ScoreView.swift */,
+				AC049CA92201B17B00F39BCF /* ScoreView.xib */,
+				AC049CAB2201B1EA00F39BCF /* AFView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC049CAA2201B17B00F39BCF /* ScoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +519,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049C9A2201AE1700F39BCF /* CreditReport.swift in Sources */,
+				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
+				AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
