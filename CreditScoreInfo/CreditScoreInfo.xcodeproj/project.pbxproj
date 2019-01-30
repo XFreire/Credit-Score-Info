@@ -32,6 +32,11 @@
 		AC049CB52201B41D00F39BCF /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CB32201B41D00F39BCF /* ScoreViewController.xib */; };
 		AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */; };
 		AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CB82201B6D600F39BCF /* CreditReportRepository.swift */; };
+		AC049CBB2201B86800F39BCF /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CBA2201B86800F39BCF /* String+Localization.swift */; };
+		AC049CBD2201B90700F39BCF /* ScoreViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CBC2201B90700F39BCF /* ScoreViewPresenter.swift */; };
+		AC049CC02201B9E200F39BCF /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CBE2201B9E200F39BCF /* ErrorViewController.xib */; };
+		AC049CC12201B9E200F39BCF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CBF2201B9E200F39BCF /* ErrorViewController.swift */; };
+		AC049CC32201B9F400F39BCF /* UIViewController+ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CC22201B9F400F39BCF /* UIViewController+ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +124,11 @@
 		AC049CB32201B41D00F39BCF /* ScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
 		AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportPresenter.swift; sourceTree = "<group>"; };
 		AC049CB82201B6D600F39BCF /* CreditReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportRepository.swift; sourceTree = "<group>"; };
+		AC049CBA2201B86800F39BCF /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		AC049CBC2201B90700F39BCF /* ScoreViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewPresenter.swift; sourceTree = "<group>"; };
+		AC049CBE2201B9E200F39BCF /* ErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		AC049CBF2201B9E200F39BCF /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		AC049CC22201B9F400F39BCF /* UIViewController+ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +273,8 @@
 		AC049C952201AD4A00F39BCF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CC22201B9F400F39BCF /* UIViewController+ChildViewController.swift */,
+				AC049CBA2201B86800F39BCF /* String+Localization.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +282,8 @@
 		AC049C962201AD4F00F39BCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CBF2201B9E200F39BCF /* ErrorViewController.swift */,
+				AC049CBE2201B9E200F39BCF /* ErrorViewController.xib */,
 				AC049CA72201B17100F39BCF /* ScoreView.swift */,
 				AC049CA92201B17B00F39BCF /* ScoreView.xib */,
 				AC049CAB2201B1EA00F39BCF /* AFView.swift */,
@@ -310,6 +324,7 @@
 				AC049CB22201B41D00F39BCF /* ScoreViewController.swift */,
 				AC049CB32201B41D00F39BCF /* ScoreViewController.xib */,
 				AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */,
+				AC049CBC2201B90700F39BCF /* ScoreViewPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -525,6 +540,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC049CC02201B9E200F39BCF /* ErrorViewController.xib in Resources */,
 				AC049CAA2201B17B00F39BCF /* ScoreView.xib in Resources */,
 				AC049CB52201B41D00F39BCF /* ScoreViewController.xib in Resources */,
 			);
@@ -573,11 +589,15 @@
 			files = (
 				AC049C9A2201AE1700F39BCF /* CreditReport.swift in Sources */,
 				AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */,
+				AC049CBD2201B90700F39BCF /* ScoreViewPresenter.swift in Sources */,
 				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
 				AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
 				AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */,
+				AC049CC12201B9E200F39BCF /* ErrorViewController.swift in Sources */,
 				AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */,
+				AC049CC32201B9F400F39BCF /* UIViewController+ChildViewController.swift in Sources */,
+				AC049CBB2201B86800F39BCF /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

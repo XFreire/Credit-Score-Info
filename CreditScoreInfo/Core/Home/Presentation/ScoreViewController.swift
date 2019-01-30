@@ -10,21 +10,48 @@ import UIKit
 
 class ScoreViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
+    @IBOutlet weak var scoreView: ScoreView!
+    
+    // MARK: Properties
+    private var presenter: CreditReportPresenterProtocol
+    private let scoreViewPresenter: ScoreViewPresenter
+    
+    // MARK: Initialization
+    init(presenter: CreditReportPresenterProtocol, scoreViewPresenter: ScoreViewPresenter) {
+        self.presenter = presenter
+        self.scoreViewPresenter = scoreViewPresenter
+        super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter.view = self
+        presenter.didLoad()
     }
+}
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ScoreViewController: CreditReportView {
+    func setLoading(_ loading: Bool) {
+        scoreView.isHidden = loading
+        if loading {
+            loadingView.startAnimating()
+        } else {
+            loadingView.stopAnimating()
+        }
     }
-    */
-
+    
+    func show(report: CreditReport) {
+        scoreViewPresenter.present(report, in: scoreView)
+    }
+    
+    func show(error: Error) {
+        add(ErrorViewController(error: error.localizedDescription))
+    }
 }
