@@ -28,6 +28,10 @@
 		AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CA72201B17100F39BCF /* ScoreView.swift */; };
 		AC049CAA2201B17B00F39BCF /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CA92201B17B00F39BCF /* ScoreView.xib */; };
 		AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CAB2201B1EA00F39BCF /* AFView.swift */; };
+		AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CB22201B41D00F39BCF /* ScoreViewController.swift */; };
+		AC049CB52201B41D00F39BCF /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC049CB32201B41D00F39BCF /* ScoreViewController.xib */; };
+		AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */; };
+		AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CB82201B6D600F39BCF /* CreditReportRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		AC049CA72201B17100F39BCF /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		AC049CA92201B17B00F39BCF /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
 		AC049CAB2201B1EA00F39BCF /* AFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFView.swift; sourceTree = "<group>"; };
+		AC049CB22201B41D00F39BCF /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		AC049CB32201B41D00F39BCF /* ScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
+		AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportPresenter.swift; sourceTree = "<group>"; };
+		AC049CB82201B6D600F39BCF /* CreditReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +220,8 @@
 		AC049C762201AD1900F39BCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CB12201B40100F39BCF /* DI */,
+				AC049CAD2201B3E300F39BCF /* Home */,
 				AC049C932201AD3C00F39BCF /* Common */,
 				AC049C772201AD1900F39BCF /* Core.h */,
 				AC049C782201AD1900F39BCF /* Info.plist */,
@@ -282,6 +292,48 @@
 				AC049CA32201AF4500F39BCF /* LocalDataReader.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		AC049CAD2201B3E300F39BCF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC049CB02201B3FC00F39BCF /* DI */,
+				AC049CAF2201B3F500F39BCF /* Repositories */,
+				AC049CAE2201B3F000F39BCF /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC049CAE2201B3F000F39BCF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AC049CB22201B41D00F39BCF /* ScoreViewController.swift */,
+				AC049CB32201B41D00F39BCF /* ScoreViewController.xib */,
+				AC049CB62201B51800F39BCF /* CreditReportPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AC049CAF2201B3F500F39BCF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AC049CB82201B6D600F39BCF /* CreditReportRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AC049CB02201B3FC00F39BCF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		AC049CB12201B40100F39BCF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049CAA2201B17B00F39BCF /* ScoreView.xib in Resources */,
+				AC049CB52201B41D00F39BCF /* ScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +572,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049C9A2201AE1700F39BCF /* CreditReport.swift in Sources */,
+				AC049CB72201B51800F39BCF /* CreditReportPresenter.swift in Sources */,
 				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
+				AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
+				AC049CB92201B6D600F39BCF /* CreditReportRepository.swift in Sources */,
 				AC049CA82201B17100F39BCF /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
