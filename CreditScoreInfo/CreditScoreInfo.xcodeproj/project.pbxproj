@@ -41,6 +41,8 @@
 		AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCB2201BB1800F39BCF /* EndpointTests.swift */; };
 		AC049CCE2201BBCC00F39BCF /* CreditReportAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */; };
 		AC049CD02201BD6D00F39BCF /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */; };
+		AC049CD22201BE3E00F39BCF /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CD12201BE3E00F39BCF /* AppAssembly.swift */; };
+		AC049CD72201C20300F39BCF /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CD62201C20300F39BCF /* NibLoadableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		AC049CCB2201BB1800F39BCF /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		AC049CCD2201BBCC00F39BCF /* CreditReportAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportAssembly.swift; sourceTree = "<group>"; };
 		AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		AC049CD12201BE3E00F39BCF /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		AC049CD62201C20300F39BCF /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				AC049C422201ABD500F39BCF /* AppDelegate.swift */,
+				AC049CD12201BE3E00F39BCF /* AppAssembly.swift */,
 				AC049C492201ABD700F39BCF /* Assets.xcassets */,
 				AC049C4B2201ABD700F39BCF /* LaunchScreen.storyboard */,
 				AC049C4E2201ABD700F39BCF /* Info.plist */,
@@ -262,6 +267,7 @@
 		AC049C932201AD3C00F39BCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CD62201C20300F39BCF /* NibLoadableView.swift */,
 				AC049C962201AD4F00F39BCF /* Views */,
 				AC049C952201AD4A00F39BCF /* Extensions */,
 				AC049C942201AD4300F39BCF /* Domain */,
@@ -582,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049C432201ABD500F39BCF /* AppDelegate.swift in Sources */,
+				AC049CD22201BE3E00F39BCF /* AppAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +619,7 @@
 				AC049CBD2201B90700F39BCF /* ScoreViewPresenter.swift in Sources */,
 				AC049CAC2201B1EA00F39BCF /* AFView.swift in Sources */,
 				AC049CD02201BD6D00F39BCF /* CoreAssembly.swift in Sources */,
+				AC049CD72201C20300F39BCF /* NibLoadableView.swift in Sources */,
 				AC049CB42201B41D00F39BCF /* ScoreViewController.swift in Sources */,
 				AC049C982201AD7C00F39BCF /* CreditReportResponse.swift in Sources */,
 				AC049CC82201BA9D00F39BCF /* WebService.swift in Sources */,

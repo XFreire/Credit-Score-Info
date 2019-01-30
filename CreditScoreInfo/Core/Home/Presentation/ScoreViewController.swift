@@ -12,7 +12,16 @@ class ScoreViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
-    @IBOutlet weak var scoreView: ScoreView!
+    @IBOutlet weak var scoreViewContainer: UIStackView!
+    
+    private var scoreView: ScoreView! {
+        didSet {
+            let width = Double(scoreView.frame.width)
+            scoreView.cornerRadius = width / 2
+            scoreView.borderWidth = 2
+            scoreView.borderColor = .darkGray
+        }
+    }
     
     // MARK: Properties
     private var presenter: CreditReportPresenterProtocol
@@ -32,14 +41,21 @@ class ScoreViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         presenter.view = self
         presenter.didLoad()
+    }
+    
+    func setupViews() {
+        scoreView = ScoreView.instantiate()
+        scoreViewContainer.subviews.forEach{ $0.removeFromSuperview() }
+        scoreViewContainer.addArrangedSubview(scoreView)
     }
 }
 
 extension ScoreViewController: CreditReportView {
     func setLoading(_ loading: Bool) {
-        scoreView.isHidden = loading
+        scoreViewContainer.isHidden = loading
         if loading {
             loadingView.startAnimating()
         } else {
@@ -49,7 +65,6 @@ extension ScoreViewController: CreditReportView {
     
     func show(report: CreditReport) {
         scoreViewPresenter.present(report, in: scoreView)
-        
     }
     
     func show(error: Error) {

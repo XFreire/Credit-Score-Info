@@ -8,11 +8,9 @@
 
 import UIKit
 
-class ScoreView: AFView {
+class ScoreView: AFView, NibLoadableView {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var maxScoreValueLabel: UILabel!
-    
-
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var maxScoreValueLabel: UILabel!
 }

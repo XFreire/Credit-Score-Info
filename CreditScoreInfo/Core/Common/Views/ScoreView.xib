@@ -17,19 +17,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-qc-mXw">
-                    <rect key="frame" x="45.5" y="40.5" width="147" height="21"/>
+                    <rect key="frame" x="45.5" y="45.5" width="147" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZz-dv-JRs">
-                    <rect key="frame" x="79.5" y="150" width="79" height="21"/>
+                    <rect key="frame" x="79.5" y="155" width="79" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="327" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4F-L3-4vR">
-                    <rect key="frame" x="80" y="77.5" width="78" height="56.5"/>
+                    <rect key="frame" x="80" y="82.5" width="78" height="56.5"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="47"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                 <constraint firstItem="zZz-dv-JRs" firstAttribute="top" secondItem="d4F-L3-4vR" secondAttribute="bottom" constant="16" id="kbL-ZH-3Kk"/>
                 <constraint firstItem="d4F-L3-4vR" firstAttribute="top" secondItem="fbZ-qc-mXw" secondAttribute="bottom" constant="16" id="lY5-nj-iML"/>
                 <constraint firstItem="d4F-L3-4vR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uXI-fY-tY3"/>
-                <constraint firstItem="d4F-L3-4vR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vWr-n9-gAI"/>
+                <constraint firstItem="d4F-L3-4vR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="vWr-n9-gAI"/>
                 <constraint firstItem="fbZ-qc-mXw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y3J-Fn-O08"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
