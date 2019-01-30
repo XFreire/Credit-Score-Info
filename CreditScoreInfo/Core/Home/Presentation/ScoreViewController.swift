@@ -14,7 +14,7 @@ class ScoreViewController: UIViewController, CreditReportView {
     @IBOutlet var loadingView: UIActivityIndicatorView!
     @IBOutlet var scoreViewContainer: UIStackView!
     
-    private var scoreView: ScoreView! {
+    var scoreView: ScoreView! {
         didSet {
             let width = Double(scoreView.frame.width)
             scoreView.cornerRadius = width / 2

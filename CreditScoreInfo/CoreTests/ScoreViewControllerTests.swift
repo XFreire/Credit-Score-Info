@@ -51,5 +51,7 @@ class ScoreViewControllerTests: XCTestCase {
         viewControllerMock.loadView()
         viewControllerMock.viewDidLoad()
         XCTAssertTrue(viewControllerMock.showReportCalled.0)
+        XCTAssertEqual(viewControllerMock.scoreView.scoreLabel.text, "514")
+        XCTAssertEqual(viewControllerMock.scoreView.maxScoreValueLabel.text, "out of 700")
     }
 }
