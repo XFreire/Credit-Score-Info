@@ -47,6 +47,7 @@
 		AC049CDE2201DCCE00F39BCF /* ScoreViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CDD2201DCCE00F39BCF /* ScoreViewControllerMock.swift */; };
 		AC049CE02201DEE600F39BCF /* ScoreViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */; };
 		AC049CE22201E11300F39BCF /* CreditReportPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CE12201E11300F39BCF /* CreditReportPresenterMock.swift */; };
+		AC049CE42201E97100F39BCF /* CreditReportPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CE32201E97100F39BCF /* CreditReportPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		AC049CDD2201DCCE00F39BCF /* ScoreViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewControllerMock.swift; sourceTree = "<group>"; };
 		AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewControllerTests.swift; sourceTree = "<group>"; };
 		AC049CE12201E11300F39BCF /* CreditReportPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportPresenterMock.swift; sourceTree = "<group>"; };
+		AC049CE32201E97100F39BCF /* CreditReportPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 				AC049CA52201B09000F39BCF /* CreditReportTests.swift */,
 				AC049CCB2201BB1800F39BCF /* EndpointTests.swift */,
 				AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */,
+				AC049CE32201E97100F39BCF /* CreditReportPresenterTests.swift */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 			files = (
 				AC049CA42201AF4500F39BCF /* LocalDataReader.swift in Sources */,
 				AC049CDE2201DCCE00F39BCF /* ScoreViewControllerMock.swift in Sources */,
+				AC049CE42201E97100F39BCF /* CreditReportPresenterTests.swift in Sources */,
 				AC049CA22201AEDF00F39BCF /* CreditReportResponseTests.swift in Sources */,
 				AC049CE22201E11300F39BCF /* CreditReportPresenterMock.swift in Sources */,
 				AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */,
