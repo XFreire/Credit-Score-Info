@@ -19,7 +19,7 @@ protocol CreditReportPresenterProtocol {
     func didLoad()
 }
 
-final class CreditReportPresenter: CreditReportPresenterProtocol {
+class CreditReportPresenter: CreditReportPresenterProtocol {
     
     // MARK: Properties
     private let repository: CreditReportRepositoryProtocol

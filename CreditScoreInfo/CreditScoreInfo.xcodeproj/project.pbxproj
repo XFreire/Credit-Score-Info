@@ -43,6 +43,10 @@
 		AC049CD02201BD6D00F39BCF /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */; };
 		AC049CD22201BE3E00F39BCF /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CD12201BE3E00F39BCF /* AppAssembly.swift */; };
 		AC049CD72201C20300F39BCF /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CD62201C20300F39BCF /* NibLoadableView.swift */; };
+		AC049CDA2201DBBA00F39BCF /* CreditReportRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CD92201DBBA00F39BCF /* CreditReportRepositoryMock.swift */; };
+		AC049CDE2201DCCE00F39BCF /* ScoreViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CDD2201DCCE00F39BCF /* ScoreViewControllerMock.swift */; };
+		AC049CE02201DEE600F39BCF /* ScoreViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */; };
+		AC049CE22201E11300F39BCF /* CreditReportPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC049CE12201E11300F39BCF /* CreditReportPresenterMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,10 @@
 		AC049CCF2201BD6D00F39BCF /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		AC049CD12201BE3E00F39BCF /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		AC049CD62201C20300F39BCF /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		AC049CD92201DBBA00F39BCF /* CreditReportRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportRepositoryMock.swift; sourceTree = "<group>"; };
+		AC049CDD2201DCCE00F39BCF /* ScoreViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewControllerMock.swift; sourceTree = "<group>"; };
+		AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewControllerTests.swift; sourceTree = "<group>"; };
+		AC049CE12201E11300F39BCF /* CreditReportPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportPresenterMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,12 +262,14 @@
 		AC049C832201AD1900F39BCF /* CoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC049CD82201DB9B00F39BCF /* Mocks */,
 				AC049CA02201AEBE00F39BCF /* Common */,
 				AC049C9B2201AE6F00F39BCF /* JSONData */,
 				AC049C862201AD1900F39BCF /* Info.plist */,
 				AC049CA12201AEDF00F39BCF /* CreditReportResponseTests.swift */,
 				AC049CA52201B09000F39BCF /* CreditReportTests.swift */,
 				AC049CCB2201BB1800F39BCF /* EndpointTests.swift */,
+				AC049CDF2201DEE600F39BCF /* ScoreViewControllerTests.swift */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
@@ -375,6 +385,16 @@
 				AC049CC62201BA9D00F39BCF /* WebServiceAssembly.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		AC049CD82201DB9B00F39BCF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AC049CD92201DBBA00F39BCF /* CreditReportRepositoryMock.swift */,
+				AC049CDD2201DCCE00F39BCF /* ScoreViewControllerMock.swift */,
+				AC049CE12201E11300F39BCF /* CreditReportPresenterMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,9 +657,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049CA42201AF4500F39BCF /* LocalDataReader.swift in Sources */,
+				AC049CDE2201DCCE00F39BCF /* ScoreViewControllerMock.swift in Sources */,
 				AC049CA22201AEDF00F39BCF /* CreditReportResponseTests.swift in Sources */,
+				AC049CE22201E11300F39BCF /* CreditReportPresenterMock.swift in Sources */,
 				AC049CCC2201BB1900F39BCF /* EndpointTests.swift in Sources */,
 				AC049CA62201B09000F39BCF /* CreditReportTests.swift in Sources */,
+				AC049CE02201DEE600F39BCF /* ScoreViewControllerTests.swift in Sources */,
+				AC049CDA2201DBBA00F39BCF /* CreditReportRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

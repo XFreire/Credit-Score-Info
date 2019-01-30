@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ScoreViewController: UIViewController {
+class ScoreViewController: UIViewController, CreditReportView {
 
     // MARK: - Outlets
-    @IBOutlet weak var loadingView: UIActivityIndicatorView!
-    @IBOutlet weak var scoreViewContainer: UIStackView!
+    @IBOutlet var loadingView: UIActivityIndicatorView!
+    @IBOutlet var scoreViewContainer: UIStackView!
     
     private var scoreView: ScoreView! {
         didSet {
@@ -51,9 +51,7 @@ class ScoreViewController: UIViewController {
         scoreViewContainer.subviews.forEach{ $0.removeFromSuperview() }
         scoreViewContainer.addArrangedSubview(scoreView)
     }
-}
 
-extension ScoreViewController: CreditReportView {
     func setLoading(_ loading: Bool) {
         scoreViewContainer.isHidden = loading
         if loading {
