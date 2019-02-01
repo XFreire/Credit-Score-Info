@@ -22,9 +22,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HGr-M1-zed">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HGr-M1-zed">
                     <rect key="frame" x="169" y="315" width="37" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-p5-eOk">
@@ -38,7 +37,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="J6E-p5-eOk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HAA-31-sIz"/>
+                <constraint firstItem="HGr-M1-zed" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="crw-mA-BH1"/>
                 <constraint firstItem="J6E-p5-eOk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xZv-82-TsI"/>
+                <constraint firstItem="HGr-M1-zed" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zti-Mz-IQb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
